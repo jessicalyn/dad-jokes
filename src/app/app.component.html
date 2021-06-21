@@ -3,8 +3,10 @@
     <h1>{{ title }}</h1>
   </div>
 
-  <div class="joke-container" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-    <button mat-raised-button color="primary">Get Another Joke</button>
-    <mat-card>{{ currentJoke }}</mat-card>
+  <div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+    <button mat-raised-button color="primary" (click)="jokeButton()">Get Another Joke</button>
+    <div class="joke-container" fxLayout="row wrap" fxLayoutAlign="space-around center">
+      <mat-card *ngFor="let joke of jokes">{{ joke }}</mat-card>
+    </div>
   </div>
 </div>
