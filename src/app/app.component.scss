@@ -1,0 +1,21 @@
+.title-container {
+  margin: 0 auto;
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: black 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+mat-card {
+  background-color: white;
+  width: 300px;
+}
