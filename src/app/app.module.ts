@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ApiService } from './services/api.service';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ApiService } from './services/api.service';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    FlexLayoutModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

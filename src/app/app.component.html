@@ -1,6 +1,10 @@
-<div class="title-container">
-  <h1>{{ title }}</h1>
-</div>
+<div fxFlex fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+  <div class="title-container">
+    <h1>{{ title }}</h1>
+  </div>
 
-<button mat-button color="primary">Get Another Joke</button>
-<mat-card>{{ currentJoke }}</mat-card>
+  <div class="joke-container" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+    <button mat-raised-button color="primary">Get Another Joke</button>
+    <mat-card>{{ currentJoke }}</mat-card>
+  </div>
+</div>
