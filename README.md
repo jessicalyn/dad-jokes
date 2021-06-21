@@ -2,26 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
-## Development server
+## Overview:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is an app which displays Dad Jokes from the [icanhazdadjoke.com](icanhazdadjoke.com) API. The user can click the button to retrieve new jokes to be added to the page.
 
-## Code scaffolding
+## Getting Started:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+These instructions will get a copy of the project up and running on your local machine for usage and testing purposes.
 
-## Build
+Clone the repo: ``` git clone https://github.com/jessicalyn/dad-jokes.git```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+cd into directory and run npm install: ``` npm install```
 
-## Running unit tests
+Run `ng serve` for a dev server. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
+## Known Bugs/Things to Fix:
+- Highlight or predominantly display current joke to be retrieved. It gets lost in the grouping. 
+- Definitely need to add testing.
+- Improve styling :)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Future Development and Extensions Notes:
+- Save jokes array to NgRx state management.
+- Deploy to Heroku, etc so users do not need to pull down repo to use the app.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Credits
+Credit for this project goes to:
+- [Jessica Hansen](https://github.com/jessicalyn)
