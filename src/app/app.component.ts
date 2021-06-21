@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './services/api.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { JokeResponse } from './joke';
 
@@ -13,7 +14,7 @@ export class AppComponent implements OnInit {
   currentJoke: string = '';
   jokes: Array<string> = [];
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.newJokeAPI()
@@ -23,6 +24,9 @@ export class AppComponent implements OnInit {
     this.apiService.getNewJoke()
     .subscribe((jokeResponse: JokeResponse) => {
       this.jokes.unshift(jokeResponse.joke)
+    },
+    (error) => {
+      this.snackBar.open(error.message, 'Dismiss', { duration: 3000 })
     })
   }
 

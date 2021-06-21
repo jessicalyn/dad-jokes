@@ -7,8 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { ApiService } from './services/api.service';
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { FlexLayoutModule } from "@angular/flex-layout";
+
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatSnackBarModule,
     FlexLayoutModule
   ],
   providers: [ApiService],
